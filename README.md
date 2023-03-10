@@ -40,12 +40,50 @@ After this, you are required to download and install the following software on y
         libmysql.lib
       </li>
   </li>
-  <li>	Code, build, run 
-    <ul>
-      <li>Copy libmysql.dll from C:\Program Files\MySQL\MySQL Server 8.0\lib to the executable directory </li>
-      <li>Copy libcrypto-1_1-x64.dll and libssl-1_1-x64.dll from C:\Program Files\MySQL\MySQL Server 8.0\bin to the executable directory.</li>
-    </ul>
+  <li>	Code, build, run <br>
+      Copy libmysql.dll from C:\Program Files\MySQL\MySQL Server 8.0\lib to the executable directory. <br>
+      Copy libcrypto-1_1-x64.dll and libssl-1_1-x64.dll from C:\Program Files\MySQL\MySQL Server 8.0\bin to the executable directory.
    </li>
 </ol>
+
 <h3>User Interface</h3>
+<ol>	
+  <li>Go to Install more tools and features and download.<br> 
+           Install while downloading two workloads >Desktop development with c++ and Universal Windows Platform development.<br>
+           Install one individual component >c++/CLI support for v143 build tools    
+            (Latest)                 
+  </li> 
+  <li>	Go to Project Properties > Linker >System>Subsystem and update Windows(/SUBSYSTEM:WINDOWS)</li>
+  <li>	Go to Project Properties > Linker >Advanced>Entry point and update main.</li>
+  <li>	Click on Apply.</li>
+</ol>
+
+<h2>Project Features</h2>
+<h3>Client Side Features</h3>
+<ul>
+  <li>A fully functional UI.</li>
+  <li>A Client can establish a connection with the server by entering a valid client ID and pressing the start button.</li>
+  <li>The connection from the client end is achieved through sockets.</li>
+  <li>A client can end the connection using the stop button.</li>
+</ul>
+<h3>Server Side Features</h3>
+<ul>
+  <li>A fully functional UI with a live connection to the Database.</li>
+  <li>A server can have ‘n’ number of clients connected to it.</li>
+  <li>With server UI, one can view and delete the data stored in the database based on the selection given by him.</li>
+  <li>Server stores the periodic data coming from the client in the MySQL Database.</li>
+  <li>The ‘n’ connections at the server end are achieved through sockets and multithreading with a thread for each client connection.</li>
+</ul>
+<h3>Database</h3>
+<ul>
+  <li>Relational DB (MySQL) has been used</li>
+  <li>
+    There are 2 tables
+    <ol>
+      <li>Clients<br>Client ID (Primary Key)<br>Hostname <br>Status</li>
+      <li>SystemInfo<br>Client ID (Foreign Key)<br>Hostname(Primary Key)<br>System Parameters<br>Timestamp(Primary Key)</li>
+    </ol>
+  </li>
+</ul>
+
 
