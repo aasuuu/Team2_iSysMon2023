@@ -27,8 +27,8 @@ After this, you are required to download and install the following software on y
   <li>
     Update the relevant include and lib directories in Visual Studio Community
     <ul>
-      <li>Go to Project Properties > C/C++ > General > Additional Include Directories and update
-        C:\Program Files\MySQL\Connector C++ 8.0\include 
+      <li>Go to Project Properties > C/C++ > General > Additional Include Directories and update<br>
+        C:\Program Files\MySQL\Connector C++ 8.0\include <br>
         C:\Program Files\MySQL\MySQL Server 8.0\include 
       </li>
       <li>	Go to Project Properties > Linker > General > Additional Library Directories and update
