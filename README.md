@@ -86,4 +86,14 @@ After this, you are required to download and install the following software on y
   </li>
 </ul>
 
+<h2>Team Details</h2>
+ <ol>
+  <li>Anima Mishra</li>
+  <li>Anshita Joshi</li>
+  <li>Gursewak Singh</li>
+  <li>Kanav Jain</li>
+  <li>Kartik Khandelwal</li>
+  <li>Karan Kumar</li>
+ </ol>
+
 
