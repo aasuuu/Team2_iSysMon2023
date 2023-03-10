@@ -31,18 +31,21 @@ After this, you are required to download and install the following software on y
         C:\Program Files\MySQL\Connector C++ 8.0\include <br>
         C:\Program Files\MySQL\MySQL Server 8.0\include 
       </li>
-      <li>	Go to Project Properties > Linker > General > Additional Library Directories and update
-        C:\Program Files\MySQL\Connector C++ 8.0\lib\opt 
+      <li>	Go to Project Properties > Linker > General > Additional Library Directories and update<br>
+        C:\Program Files\MySQL\Connector C++ 8.0\lib\opt <br>
         C:\Program Files\MySQL\MySQL Server 8.0\lib 
       </li>
-      <li>	Go to Project Properties > Linker > Input > Additional Dependencies and update
-        mysqlcppconn.lib 
+      <li>	Go to Project Properties > Linker > Input > Additional Dependencies and update<br>
+        mysqlcppconn.lib <br>
         libmysql.lib
       </li>
   </li>
-  4.	Code, build, run 
-  a. Copy libmysql.dll from C:\Program Files\MySQL\MySQL Server 8.0\lib to the executable directory 
-  b. Copy libcrypto-1_1-x64.dll and libssl-1_1-x64.dll from C:\Program Files\MySQL\MySQL Server 8.0\bin to the executable directory.
+  <li>	Code, build, run 
+    <ul>
+      <li>Copy libmysql.dll from C:\Program Files\MySQL\MySQL Server 8.0\lib to the executable directory </li>
+      <li>Copy libcrypto-1_1-x64.dll and libssl-1_1-x64.dll from C:\Program Files\MySQL\MySQL Server 8.0\bin to the executable directory.</li>
+    </ul>
+   </li>
 </ol>
 <h3>User Interface</h3>
 
