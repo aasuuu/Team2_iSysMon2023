@@ -10,26 +10,39 @@ A central monitoring system built using basic client-server model to collect sys
 </ul>
 
 <h2>Installation and Setup</h2>
-Download the code from this repository as a zip file and extract it at a suitable location on your system.
-After this, you are required to download and install the following software on your system for Database connection and User Interface. 
+Download the code from this repository as a zip file and extract it at a suitable location on your system.<br>
+After this, you are required to download and install the following software on your system for Database connection and User Interface.<br> 
 <h3>Database</h3>
-1.	Download and install MySQL Installer 
-2.	Using MySQL Installer install: 
-  a. MySQL Community Server 8.0.11 
-  b. MySQL Connector/C++ version 8.0.11 
-3.	Update the relevant include and lib directories in Visual Studio Community 
-  a.	Go to Project Properties > C/C++ > General > Additional Include Directories and update
-      C:\Program Files\MySQL\Connector C++ 8.0\include 
-      C:\Program Files\MySQL\MySQL Server 8.0\include 
-  b.	Go to Project Properties > Linker > General > Additional Library Directories and update
-      C:\Program Files\MySQL\Connector C++ 8.0\lib\opt 
-      C:\Program Files\MySQL\MySQL Server 8.0\lib 
-  c.	Go to Project Properties > Linker > Input > Additional Dependencies and update
-      mysqlcppconn.lib 
-      libmysql.lib
-4.	Code, build, run 
+<ol>
+  <li>  
+    Download and install MySQL Installer
+  </li> 
+  <li>
+    Using MySQL Installer install: 
+    <ul>
+      <li>MySQL Community Server 8.0.11</li> 
+      <li>MySQL Connector/C++ version 8.0.11</li>
+    </ul>
+  </li> 
+  <li>
+    Update the relevant include and lib directories in Visual Studio Community
+    <ul>
+      <li>Go to Project Properties > C/C++ > General > Additional Include Directories and update
+        C:\Program Files\MySQL\Connector C++ 8.0\include 
+        C:\Program Files\MySQL\MySQL Server 8.0\include 
+      </li>
+      <li>	Go to Project Properties > Linker > General > Additional Library Directories and update
+        C:\Program Files\MySQL\Connector C++ 8.0\lib\opt 
+        C:\Program Files\MySQL\MySQL Server 8.0\lib 
+      </li>
+      <li>	Go to Project Properties > Linker > Input > Additional Dependencies and update
+        mysqlcppconn.lib 
+        libmysql.lib
+      </li>
+  </li>
+  4.	Code, build, run 
   a. Copy libmysql.dll from C:\Program Files\MySQL\MySQL Server 8.0\lib to the executable directory 
   b. Copy libcrypto-1_1-x64.dll and libssl-1_1-x64.dll from C:\Program Files\MySQL\MySQL Server 8.0\bin to the executable directory.
-
+</ol>
 <h3>User Interface</h3>
 
