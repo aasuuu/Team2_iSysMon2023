@@ -27,20 +27,20 @@ After this, you are required to download and install the following software on y
   <li>
     Update the relevant include and lib directories in Visual Studio Community
     <ul>
-      <li>Go to Project Properties > C/C++ > General > Additional Include Directories and update<br>
+      <li><b>Go to Project Properties > C/C++ > General > Additional Include Directories and update<b><br>
         C:\Program Files\MySQL\Connector C++ 8.0\include <br>
         C:\Program Files\MySQL\MySQL Server 8.0\include 
       </li>
-      <li>	Go to Project Properties > Linker > General > Additional Library Directories and update<br>
+      <li>	<b>Go to Project Properties > Linker > General > Additional Library Directories and update</b><br>
         C:\Program Files\MySQL\Connector C++ 8.0\lib\opt <br>
         C:\Program Files\MySQL\MySQL Server 8.0\lib 
       </li>
-      <li>	Go to Project Properties > Linker > Input > Additional Dependencies and update<br>
+        <li>	<b>Go to Project Properties > Linker > Input > Additional Dependencies and update</b><br>
         mysqlcppconn.lib <br>
         libmysql.lib
       </li>
   </li>
-  <li>	Code, build, run <br>
+      <li>	<b>Code, build, run </b><br>
       Copy libmysql.dll from C:\Program Files\MySQL\MySQL Server 8.0\lib to the executable directory. <br>
       Copy libcrypto-1_1-x64.dll and libssl-1_1-x64.dll from C:\Program Files\MySQL\MySQL Server 8.0\bin to the executable directory.
    </li>
@@ -80,8 +80,8 @@ After this, you are required to download and install the following software on y
   <li>
     There are 2 tables
     <ol>
-      <li>Clients<br>Client ID (Primary Key)<br>Hostname <br>Status</li>
-      <li>SystemInfo<br>Client ID (Foreign Key)<br>Hostname(Primary Key)<br>System Parameters<br>Timestamp(Primary Key)</li>
+      <li><b>Clients</b><br>Client ID (Primary Key)<br>Hostname <br>Status</li>
+      <li><b>SystemInfo</b><br>Client ID (Foreign Key)<br>Hostname(Primary Key)<br>System Parameters<br>Timestamp(Primary Key)</li>
     </ol>
   </li>
 </ul>
